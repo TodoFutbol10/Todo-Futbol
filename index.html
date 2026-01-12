@@ -1,106 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Todo Fútbol</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Todo Fútbol</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0a0a0a;
-      color: #ffffff;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0b0b;
+  color: #fff;
+}
 
-    header {
-      background-image: linear-gradient(
-        rgba(0,0,0,0.65),
-        rgba(0,0,0,0.65)
-      ),
-      url("https://images.unsplash.com/photo-1509027572446-af8401acfdc2");
-      background-size: cover;
-      background-position: center;
-      padding: 110px 20px;
-      text-align: center;
-    }
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 120px 20px;
+  text-align: center;
+}
 
-    header h1 {
-      font-size: 52px;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
+header h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+}
 
-    header p {
-      font-size: 22px;
-      font-weight: bold;
-      color: #1db954;
-    }
+header p {
+  font-size: 22px;
+  color: #1db954;
+}
 
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-      text-align: center;
-    }
+/* SECCIONES */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      margin-top: 35px;
-    }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
 
-    .card {
-      background: #121212;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
-    }
+.card {
+  background: #141414;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #1db954;
+}
 
-    .card img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 15px;
-    }
+.card h3 {
+  color: #1db954;
+  margin-bottom: 10px;
+}
 
-    .card h3 {
-      color: #1db954;
-      margin-bottom: 10px;
-    }
+/* REDES */
+.redes a {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  background: #1db954;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 40px;
+}
 
-    .videos iframe {
-      width: 100%;
-      max-width: 560px;
-      height: 315px;
-      margin: 20px;
-      border-radius: 15px;
-    }
-
-    .redes a {
-      display: inline-block;
-      margin: 12px;
-      padding: 15px 32px;
-      background: #1db954;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 50px;
-      transition: transform 0.2s;
-    }
-
-    .redes a:hover {
-      transform: scale(1.1);
-    }
-
-    footer {
-      background: #000;
-      padding: 35px;
-      text-align: center;
-      font-size: 14px;
-      color: #aaa;
-    }
-  </style>
+/* FOOTER */
+footer {
+  background: #000;
+  padding: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+</style>
 </head>
 
 <body>
@@ -114,46 +90,33 @@
   <h2>📖 Sobre el proyecto</h2>
   <p>
     Todo Fútbol es un proyecto dedicado 100% al fútbol.
-    Goles agónicos, curiosidades, datos históricos y momentos inolvidables
-    que marcaron la historia del deporte más apasionante del mundo.
+    Goles agónicos, curiosidades, datos históricos y momentos inolvidables.
+    Pasión pura para verdaderos hinchas.
   </p>
 </section>
 
 <section>
   <h2>🔥 Qué vas a encontrar</h2>
-
   <div class="cards">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" alt="Futbolista">
-      <h3>⚽ Goles inolvidables</h3>
-      <p>Definiciones históricas, goles sobre la hora y momentos eternos.</p>
+      <h3>⚽ Goles históricos</h3>
+      <p>Definiciones eternas, goles sobre la hora y momentos inolvidables.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf" alt="Trofeo de fútbol">
-      <h3>🏆 Historia y títulos</h3>
-      <p>Copas, finales históricas y los trofeos más importantes.</p>
+      <h3>🏆 Copas y finales</h3>
+      <p>Los títulos más importantes y las finales que marcaron época.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2" alt="Estadio lleno">
       <h3>🏟️ Pasión del hincha</h3>
-      <p>Tribunas, estadios y el folklore que hace único al fútbol.</p>
+      <p>Tribunas, clásicos y el folklore que hace único al fútbol.</p>
     </div>
   </div>
 </section>
 
-<section class="videos">
-  <h2>🎥 Últimos videos</h2>
-
-  <!-- Reemplazá VIDEO_ID por tus videos reales -->
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
-</section>
-
 <section class="redes">
   <h2>🔥 Seguime en redes</h2>
-
   <a href="https://www.tiktok.com/@todo.futbol.tt" target="_blank">TikTok</a>
   <a href="https://www.youtube.com/@Todo.futbolYT" target="_blank">YouTube</a>
   <a href="https://www.instagram.com/todo.futbol.ig/" target="_blank">Instagram</a>
@@ -161,7 +124,7 @@
 
 <section>
   <h2>🤝 Contacto</h2>
-  <p>¿Querés colaborar, hacer publicidad o un proyecto conjunto?</p>
+  <p>¿Querés colaborar, publicidad o un proyecto conjunto?</p>
   <p>📩 contacto m03105848@gmail.com</p>
 </section>
 
